@@ -7,22 +7,22 @@ from utils import settings
 
 
 def load_json(rfdir, rfname, dataset='Aminer'):
-    with codecs.open(join(rfdir, dataset,rfname, ), 'r', encoding='utf-8') as rf:
+    with codecs.open(join(rfdir,rfname, ), 'r', encoding='utf-8') as rf:
         return json.load(rf)
 
 
 def dump_json(obj, wfpath, wfname, indent=None, dataset='Aminer'):
-    with codecs.open(join(wfpath, dataset, wfname), 'w', encoding='utf-8') as wf:
+    with codecs.open(join(wfpath, wfname), 'w', encoding='utf-8') as wf:
         json.dump(obj, wf, ensure_ascii=False, indent=indent)
 
 
 def dump_data(obj, wfpath, wfname, dataset='Aminer'):
-    with open(os.path.join(wfpath, dataset, wfname), 'wb') as wf:
+    with open(os.path.join(wfpath, wfname), 'wb') as wf:
         pickle.dump(obj, wf)
 
 
 def load_data(rfpath, rfname, dataset='Aminer'):
-    with open(os.path.join(rfpath, dataset, rfname), 'rb') as rf:
+    with open(os.path.join(rfpath, rfname), 'rb') as rf:
         return pickle.load(rf)
 
 
