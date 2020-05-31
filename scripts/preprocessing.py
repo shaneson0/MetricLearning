@@ -12,8 +12,8 @@ import json
 
 start_time = datetime.now()
 
-def dump_author_social_relation_to_file():
-    pubs_dict = data_utils.load_json(settings.GLOBAL_DATA_DIR, 'pubs_raw.json')
+def dump_author_social_relation_to_file(dataset='Aminer'):
+    pubs_dict = data_utils.load_json(settings.GLOBAL_DATA_DIR, 'pubs_raw.json', dataset)
     wf = codecs.open(join(settings.GLOBAL_DATA_DIR, 'author_social.txt'), 'w', encoding='utf-8')
 
     Authors = []

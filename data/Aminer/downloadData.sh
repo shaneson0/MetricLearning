@@ -9,3 +9,26 @@ mv data/* ./
 
 rm -r data
 rm na-data-kdd18.zip
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
