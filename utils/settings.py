@@ -3,7 +3,6 @@ import os
 
 PROJ_DIR = join(abspath(dirname(__file__)), '..')
 
-def
 
 DATA_DIR = join(PROJ_DIR, 'data')
 OUT_DIR = join(PROJ_DIR, 'out')
